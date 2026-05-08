@@ -6,17 +6,37 @@
     <title>INCAI Studio - AI Solutions for News Collection and Text Summarization</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: #333;
+            min-height: 100vh;
         }
         header {
-            background-color: #007bff;
+            background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
             color: white;
-            padding: 50px 20px;
+            padding: 60px 20px;
             text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            position: relative;
+        }
+        header .hero-image {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            margin: 20px auto 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0 0 0;
         }
         .container {
             max-width: 1200px;
@@ -25,19 +45,58 @@
         }
         .section {
             margin-bottom: 40px;
-            padding: 20px;
+            padding: 30px;
             background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .section:hover {
+            transform: translateY(-5px);
+        }
+        .service-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .service-item img {
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            object-fit: cover;
+        }
+        .service-item i {
+            font-size: 2em;
+            margin-right: 20px;
+            color: #007bff;
         }
         h1, h2 {
             margin-top: 0;
+        }
+        h2 {
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
         }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 20px;
+            margin-top: 40px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
@@ -45,26 +104,49 @@
     <header>
         <h1>Welcome to INCAI Studio</h1>
         <p>Invest in the Future with AI Technology</p>
+        <img src="https://picsum.photos/800/400?random=1" alt="AI Technology Hero Image" class="hero-image">
     </header>
 
     <div class="container">
         <section class="section">
             <h2>About INCAI Studio</h2>
-            <p>INCAI Studio is a leading company in providing artificial intelligence (AI) application solutions. We specialize in developing advanced AI tools and services to help businesses and individuals efficiently and accurately collect news and summarize text.</p>
+            <p>INCAI Studio is a leading research and development company specializing in artificial intelligence (AI) solutions. We focus on creating innovative AI applications to transform industries and improve daily life. Our expertise includes AI-powered tools for news collection, text summarization, English language learning, and health care management.</p>
+            <p>As a studio dedicated to AI research, we continuously explore cutting-edge technologies to deliver efficient, accurate, and user-friendly solutions for businesses and individuals worldwide.</p>
         </section>
 
         <section class="section">
             <h2>Our Services</h2>
-            <ul>
-                <li><strong>News Collection:</strong> Use AI to automatically collect and analyze news from various sources, helping you stay updated with timely information.</li>
-                <li><strong>Text Summarization:</strong> Our AI technology can summarize long texts into concise, understandable paragraphs, saving time and improving work efficiency.</li>
-            </ul>
+            <div class="service-item">
+                <img src="https://picsum.photos/80/80?random=2" alt="News Collection">
+                <div>
+                    <strong>News Collection:</strong> Use AI to automatically collect and analyze news from various sources, helping you stay updated with timely information.
+                </div>
+            </div>
+            <div class="service-item">
+                <img src="https://picsum.photos/80/80?random=3" alt="Text Summarization">
+                <div>
+                    <strong>Text Summarization:</strong> Our AI technology can summarize long texts into concise, understandable paragraphs, saving time and improving work efficiency.
+                </div>
+            </div>
+            <div class="service-item">
+                <img src="https://picsum.photos/80/80?random=4" alt="AI for Learning English">
+                <div>
+                    <strong>AI for Learning English:</strong> Interactive AI-powered applications designed to help users learn and improve their English language skills through personalized lessons and real-time feedback.
+                </div>
+            </div>
+            <div class="service-item">
+                <img src="https://picsum.photos/80/80?random=5" alt="AI for Health Care">
+                <div>
+                    <strong>AI for Health Care:</strong> Advanced AI solutions for health monitoring, diagnosis assistance, and personalized care plans to enhance patient outcomes and streamline medical processes.
+                </div>
+            </div>
         </section>
 
         <section class="section">
             <h2>Contact Support</h2>
             <p>If you need support or have questions, please contact us via email:</p>
             <p><strong>Email:</strong> <a href="mailto:MonicaRenteria218@gmail.com">MonicaRenteria218@gmail.com</a></p>
+            <a href="mailto:MonicaRenteria218@gmail.com" class="btn">Get in Touch</a>
         </section>
     </div>
 
